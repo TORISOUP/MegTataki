@@ -2,6 +2,8 @@
 
 知人を煽るためにつくったクソゲーのUnityプロジェクト一式です。
 
+* [あそぶ](https://unityroom.com/games/megtataki)
+
 # LICENSE
 
 `Assets/MegTataki/Scripts`以下のソースコードは`パブリックドメイン`です。 
