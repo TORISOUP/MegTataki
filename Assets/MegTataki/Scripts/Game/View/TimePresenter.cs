@@ -1,11 +1,10 @@
-using System;
-using MeguTataki.Scripts.Game.Managers;
+using MegTataki.Scripts.Game.Managers;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace MeguTataki.Scripts.Game.View
+namespace MegTataki.Scripts.Game.View
 {
     public class TimePresenter : MonoBehaviour
     {

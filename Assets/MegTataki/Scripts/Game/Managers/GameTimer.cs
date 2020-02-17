@@ -1,11 +1,10 @@
-using System;
 using System.Threading;
 using UniRx;
 using UniRx.Async;
 using UniRx.Async.Triggers;
 using UnityEngine;
 
-namespace MeguTataki.Scripts.Game.Managers
+namespace MegTataki.Scripts.Game.Managers
 {
     public class GameTimer : MonoBehaviour
     {

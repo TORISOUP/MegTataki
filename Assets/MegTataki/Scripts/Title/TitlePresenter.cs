@@ -1,11 +1,10 @@
-﻿using System;
-using MeguTataki.Scripts.Common;
+﻿using MegTataki.Scripts.Common;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace MeguTataki.Scripts.Title
+namespace MegTataki.Scripts.Title
 {
     public class TitlePresenter : MonoBehaviour
     {

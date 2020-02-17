@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace MeguTataki.Scripts.Common
+namespace MegTataki.Scripts.Common
 {
     public class ElementShake : MonoBehaviour
     {

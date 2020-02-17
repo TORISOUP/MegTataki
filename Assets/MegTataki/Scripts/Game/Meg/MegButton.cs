@@ -6,7 +6,7 @@ using UniRx.Async.Triggers;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MeguTataki.Scripts.Game.Meg
+namespace MegTataki.Scripts.Game.Meg
 {
     public class MegButton : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MeguTataki.Scripts.Common
+namespace Unity
 {
     /// <summary>
     /// アウトラインコンポーネントをリッチに

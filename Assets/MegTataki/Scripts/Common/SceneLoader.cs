@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace MeguTataki.Scripts.Common
+namespace MegTataki.Scripts.Common
 {
     /// <summary>
     ///  シーン遷移を実行する

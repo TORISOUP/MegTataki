@@ -1,9 +1,8 @@
-using System;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace MeguTataki.Scripts.Game.Managers
+namespace MegTataki.Scripts.Game.Managers
 {
     public enum GameState
     {

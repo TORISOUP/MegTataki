@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using MeguTataki.Scripts.Common;
-using MeguTataki.Scripts.Game.Meg;
+using MegTataki.Scripts.Common;
+using MegTataki.Scripts.Game.Meg;
 using UnityEngine;
 using Zenject;
 
-namespace MeguTataki.Scripts.Game.Managers
+namespace MegTataki.Scripts.Game.Managers
 {
     /// <summary>
     /// 初期化マン

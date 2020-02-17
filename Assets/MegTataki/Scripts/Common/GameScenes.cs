@@ -1,4 +1,4 @@
-namespace MeguTataki.Scripts.Common
+namespace MegTataki.Scripts.Common
 {
     public enum GameScenes
     {

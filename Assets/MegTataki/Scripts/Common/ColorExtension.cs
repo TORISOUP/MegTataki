@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MeguTataki.Scripts.Common
+namespace MegTataki.Scripts.Common
 {
     public static class ColorExtension
     {

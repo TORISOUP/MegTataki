@@ -1,7 +1,7 @@
-﻿using MeguTataki.Scripts.Common;
+﻿using MegTataki.Scripts.Common;
 using UnityEngine;
 
-namespace MeguTataki.Scripts.Title
+namespace MegTataki.Scripts.Title
 {
     public class TitleManager : MonoBehaviour
     {

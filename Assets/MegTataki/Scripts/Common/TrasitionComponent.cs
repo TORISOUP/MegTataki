@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
-namespace MeguTataki.Scripts.Common
+namespace MegTataki.Scripts.Common
 {
     public class TrasitionComponent : MonoBehaviour
     {

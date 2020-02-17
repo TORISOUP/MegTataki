@@ -1,5 +1,4 @@
 using System;
-using System.Runtime.InteropServices;
 using System.Threading;
 using UniRx;
 using UniRx.Async;
@@ -7,7 +6,7 @@ using UniRx.Async.Triggers;
 using UnityEngine;
 using Zenject;
 
-namespace MeguTataki.Scripts.Game.Managers
+namespace MegTataki.Scripts.Game.Managers
 {
     public class MegManager : MonoBehaviour
     {

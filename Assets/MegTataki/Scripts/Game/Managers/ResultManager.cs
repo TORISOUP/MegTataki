@@ -1,13 +1,12 @@
-using System;
 using System.Threading;
-using MeguTataki.Scripts.Common;
+using MegTataki.Scripts.Common;
 using UniRx;
 using UniRx.Async;
 using UniRx.Async.Triggers;
 using UnityEngine;
 using Zenject;
 
-namespace MeguTataki.Scripts.Game.Managers
+namespace MegTataki.Scripts.Game.Managers
 {
     public class ResultManager : MonoBehaviour
     {
