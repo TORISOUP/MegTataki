@@ -21,8 +21,8 @@ namespace MegTataki.Scripts.Game.Meg
 
             _megManager.ShowMegMessage
                 .TakeUntil(_stateManager.State.FirstOrDefault(x => x == GameState.Result))
-                .Where(x => x == _megButton.Id)
-                .Subscribe(_ => _megButton.Open())
+                .Where(x => x.Item1 == _megButton.Id)
+                .Subscribe(x => _megButton.Open(x.Item2))
                 .AddTo(this);
 
             _megButton.OnClickedAsObservable

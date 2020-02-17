@@ -10,8 +10,10 @@ namespace MegTataki.Scripts.Game.Managers
 {
     public class MegManager : MonoBehaviour
     {
-        public IObservable<int> ShowMegMessage => _showMeg;
-        private Subject<int> _showMeg = new Subject<int>();
+        public IObservable<(int, int)> ShowMegMessage => _showMeg;
+
+        //id,millsec
+        private Subject<(int, int)> _showMeg = new Subject<(int, int)>();
 
         private Subject<Unit> _onClicked = new Subject<Unit>();
         public IObservable<Unit> OnClicked => _onClicked;
@@ -72,7 +74,9 @@ namespace MegTataki.Scripts.Game.Managers
                     PlayerLoopTiming.Update,
                     token);
 
-                _showMeg.OnNext(UnityEngine.Random.Range(0, _maxMegCount));
+                _showMeg.OnNext(
+                    (UnityEngine.Random.Range(0, _maxMegCount),
+                        UnityEngine.Random.Range(750, 2000)));
             }
 
             // そのあとはたくさん
@@ -87,7 +91,9 @@ namespace MegTataki.Scripts.Game.Managers
                 var max = UnityEngine.Random.Range(1, 4);
                 for (int i = 0; i < max; i++)
                 {
-                    _showMeg.OnNext(UnityEngine.Random.Range(0, _maxMegCount));
+                    _showMeg.OnNext(
+                        (UnityEngine.Random.Range(0, _maxMegCount),
+                            UnityEngine.Random.Range(500, 1000)));
                     await UniTask.Yield(PlayerLoopTiming.Update, token);
                 }
             }

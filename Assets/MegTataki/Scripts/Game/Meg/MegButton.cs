@@ -38,12 +38,12 @@ namespace MegTataki.Scripts.Game.Meg
             _id = id;
         }
 
-        public void Open()
+        public void Open(int millsec)
         {
             // すでに出ているなら何もしない
             if (_isOpend.Value) return;
 
-            OpenAsync(this.GetCancellationTokenOnDestroy()).Forget();
+            OpenAsync(millsec,this.GetCancellationTokenOnDestroy()).Forget();
         }
 
         public void Close()
@@ -51,14 +51,13 @@ namespace MegTataki.Scripts.Game.Meg
             _isOpend.Value = false;
         }
 
-        private async UniTaskVoid OpenAsync(CancellationToken token)
+        private async UniTaskVoid OpenAsync(int millsec,CancellationToken token)
         {
             _isOpend.Value = true;
 
-            var seconds = UnityEngine.Random.Range(1000, 4000);
 
             var isTimeout = await _button.OnClickAsync(token)
-                .TimeoutWithoutException(TimeSpan.FromMilliseconds(seconds));
+                .TimeoutWithoutException(TimeSpan.FromMilliseconds(millsec));
 
 
             if (!isTimeout) _onClicked.OnNext(Unit.Default);
